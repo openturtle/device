@@ -142,6 +142,7 @@
   <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
   <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
   <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=c++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
   <avrgcccpp.linker.libraries.Libraries>
     <ListValues>
       <Value>libm</Value>
@@ -178,10 +179,19 @@
     <Compile Include="lib\ldpc.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="lib\packet.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="lib\ST7540.cpp">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="lib\ST7540.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\state_machine.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="lib\state_machine.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="main.cpp">
